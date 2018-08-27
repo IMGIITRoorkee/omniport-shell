@@ -19,10 +19,11 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Branch',
             fields=[
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('removed', models.DateTimeField(blank=True, default=None, editable=False, null=True)),
                 ('datetime_created', models.DateTimeField(auto_now_add=True)),
                 ('datetime_modified', models.DateTimeField(auto_now=True)),
-                ('code', models.CharField(max_length=7, primary_key=True, serialize=False, unique=True)),
+                ('code', models.CharField(max_length=7, serialize=False, unique=True)),
                 ('name', models.CharField(max_length=127)),
                 ('semester_count', models.IntegerField(blank=True, null=True)),
                 ('degree', models.CharField(choices=[('btech', 'B.Tech. - Bachelor of Technology'), ('idd', 'Int. M.Tech. - Integrated Dual Degree'), ('bsc', 'B.Sc. - Bachelor of Science'), ('imsc', 'Int. M.Sc. - Integrated Master of Science'), ('barch', 'B.Arch. - Bachelor of Architecture'), ('mtech', 'M.Tech. - Master of Technology'), ('msc', 'M.Sc. - Master of Science'), ('march', 'M.Arch. - Master of Architecture'), ('murp', 'M.U.R.P - Master of Urban and Regional Planning'), ('pgdip', 'P.G. Dip. - Post-graduate Diploma'), ('mba', 'M.B.A. - Master of Business Administration'), ('mca', 'M.C.A. - Master of Computer Applications'), ('phd', 'Ph.D. - Doctor of Philosophy'), ('pdoc', 'Post Doc. - Post-doctorate')], max_length=7, unique=True)),
@@ -46,10 +47,11 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Department',
             fields=[
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('removed', models.DateTimeField(blank=True, default=None, editable=False, null=True)),
                 ('datetime_created', models.DateTimeField(auto_now_add=True)),
                 ('datetime_modified', models.DateTimeField(auto_now=True)),
-                ('code', models.CharField(choices=[('ased', 'Applied Science and Engineering Department'), ('arcd', 'Architecture and Planning Department'), ('btd', 'Biotechnology Department'), ('ched', 'Chemical Engineering Department'), ('cyd', 'Chemistry Department'), ('ced', 'Civil Engineering Department'), ('csed', 'Computer Science and Engineering Department'), ('esd', 'Earth Sciences Department'), ('eqd', 'Earthquake Department'), ('eed', 'Electrical Engineering Department'), ('eced', 'Electronics and Communication Engineering Department'), ('hsd', 'Humanities and Social Sciences Department'), ('hyd', 'Hydrology Department'), ('msd', 'Management Studies Department'), ('mad', 'Mathematics Department'), ('mied', 'Mechanical and Industrial Engineering Department'), ('mmed', 'Metallurgical and Materials Engineering Department'), ('ptd', 'Paper Technology Department'), ('phd', 'Physics Department'), ('pped', 'Polymer and Process Engineering Department'), ('wrdmd', 'Water Resources Development and Management Department'), ('qip', 'Quality Improvement Programme')], max_length=7, primary_key=True, serialize=False, unique=True)),
+                ('code', models.CharField(choices=[('ased', 'Applied Science and Engineering Department'), ('arcd', 'Architecture and Planning Department'), ('btd', 'Biotechnology Department'), ('ched', 'Chemical Engineering Department'), ('cyd', 'Chemistry Department'), ('ced', 'Civil Engineering Department'), ('csed', 'Computer Science and Engineering Department'), ('esd', 'Earth Sciences Department'), ('eqd', 'Earthquake Department'), ('eed', 'Electrical Engineering Department'), ('eced', 'Electronics and Communication Engineering Department'), ('hsd', 'Humanities and Social Sciences Department'), ('hyd', 'Hydrology Department'), ('msd', 'Management Studies Department'), ('mad', 'Mathematics Department'), ('mied', 'Mechanical and Industrial Engineering Department'), ('mmed', 'Metallurgical and Materials Engineering Department'), ('ptd', 'Paper Technology Department'), ('phd', 'Physics Department'), ('pped', 'Polymer and Process Engineering Department'), ('wrdmd', 'Water Resources Development and Management Department'), ('qip', 'Quality Improvement Programme')], max_length=7, serialize=False, unique=True)),
             ],
             options={
                 'abstract': False,
@@ -93,6 +95,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Student',
             fields=[
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('removed', models.DateTimeField(blank=True, default=None, editable=False, null=True)),
                 ('datetime_created', models.DateTimeField(auto_now_add=True)),
                 ('datetime_modified', models.DateTimeField(auto_now=True)),
@@ -101,7 +104,7 @@ class Migration(migrations.Migration):
                 ('current_year', models.IntegerField()),
                 ('current_semester', models.IntegerField()),
                 ('current_cgpa', models.DecimalField(blank=True, decimal_places=3, max_digits=5, null=True, validators=[django.core.validators.MaxValueValidator(10.0), django.core.validators.MinValueValidator(0.0)], verbose_name='current CGPA')),
-                ('enrolment_number', models.CharField(max_length=8, primary_key=True, serialize=False, unique=True, validators=[django.core.validators.RegexValidator('\\d{8}')])),
+                ('enrolment_number', models.CharField(max_length=8, serialize=False, unique=True, validators=[django.core.validators.RegexValidator('\\d{8}')])),
                 ('branch', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.KERNEL_BRANCH_MODEL)),
                 ('person', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.KERNEL_PERSON_MODEL)),
             ],

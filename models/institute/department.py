@@ -11,7 +11,6 @@ class Department(AbstractDepartment):
 
     code = models.CharField(
         max_length=7,
-        primary_key=True,
         unique=True,
         choices=DEPARTMENTS,
     )
