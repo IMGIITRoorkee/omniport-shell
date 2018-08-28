@@ -35,10 +35,11 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Centre',
             fields=[
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('removed', models.DateTimeField(blank=True, default=None, editable=False, null=True)),
                 ('datetime_created', models.DateTimeField(auto_now_add=True)),
                 ('datetime_modified', models.DateTimeField(auto_now=True)),
-                ('code', models.CharField(choices=[('ahec', 'Alternate Hydro Energy Centre'), ('cnt', 'Centre for Nanotechnology'), ('cedmm', 'Centre of Excellence in Disaster Mitigation and Management'), ('cts', 'Centre for Transportation Systems'), ('chs', 'Centre for Himalayan Studies'), ('ceudm', 'Centre of Excellence in Urban Design and Management'), ('mgcl', 'Mahatma Gandhi Central Library'), ('cec', 'Continuing Education Centre'), ('icc', 'Institute Computer Centre'), ('iic', 'Institute Instrumentation Centre'), ('iprc', 'Intellectual Property Rights Cell'), ('etc', 'Education Technology Cell'), ('ih', 'Institute Hospital'), ('tides', 'Tides Incubation Centre')], max_length=7, primary_key=True, serialize=False, unique=True)),
+                ('code', models.CharField(choices=[('ahec', 'Alternate Hydro Energy Centre'), ('cnt', 'Centre for Nanotechnology'), ('cedmm', 'Centre of Excellence in Disaster Mitigation and Management'), ('cts', 'Centre for Transportation Systems'), ('chs', 'Centre for Himalayan Studies'), ('ceudm', 'Centre of Excellence in Urban Design and Management'), ('mgcl', 'Mahatma Gandhi Central Library'), ('cec', 'Continuing Education Centre'), ('icc', 'Institute Computer Centre'), ('iic', 'Institute Instrumentation Centre'), ('iprc', 'Intellectual Property Rights Cell'), ('etc', 'Education Technology Cell'), ('ih', 'Institute Hospital'), ('tides', 'Tides Incubation Centre')], max_length=7, serialize=False, unique=True)),
             ],
             options={
                 'abstract': False,
