@@ -1,7 +1,7 @@
 from shell.models.institute import (
     Department,
     Centre,
-    Branch,
+    Degree,
 )
 from shell.models.personal_information import (
     PoliticalInformation,
