@@ -1,7 +1,7 @@
 from django.db import models
 
 from kernel.models import AbstractCentre
-from shell.constants import CENTRES
+from shell.constants import centres
 
 
 class Centre(AbstractCentre):
@@ -12,7 +12,7 @@ class Centre(AbstractCentre):
     code = models.CharField(
         max_length=7,
         unique=True,
-        choices=CENTRES,
+        choices=centres.CENTRES,
     )
 
     @property

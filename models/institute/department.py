@@ -1,7 +1,7 @@
 from django.db import models
 
 from kernel.models import AbstractDepartment
-from shell.constants import DEPARTMENTS
+from shell.constants import departments
 
 
 class Department(AbstractDepartment):
@@ -12,7 +12,7 @@ class Department(AbstractDepartment):
     code = models.CharField(
         max_length=7,
         unique=True,
-        choices=DEPARTMENTS,
+        choices=departments.DEPARTMENTS,
     )
 
     @property

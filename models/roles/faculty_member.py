@@ -1,7 +1,7 @@
 from django.db import models
 
 from kernel.models import AbstractFacultyMember
-from shell.constants import FACULTY_DESIGNATIONS
+from shell.constants import faculty_designations
 
 
 class FacultyMember(AbstractFacultyMember):
@@ -11,7 +11,7 @@ class FacultyMember(AbstractFacultyMember):
 
     designation = models.CharField(
         max_length=3,
-        choices=FACULTY_DESIGNATIONS,
+        choices=faculty_designations.FACULTY_DESIGNATIONS,
     )
 
     def __str__(self):
