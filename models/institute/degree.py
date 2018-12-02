@@ -40,6 +40,17 @@ class Degree(AbstractDegree):
             graduations.GRADUATIONS[6]: degrees.POSTDOCTORATE_DEGREES,
         }
 
-        for (grad, deg) in graduation_degrees_map:
+        for (grad, deg) in graduation_degrees_map.items():
             if degree_tuple in deg:
                 return grad
+
+    def __str__(self):
+        """
+        Return the string representation of the model
+        :return: the string representation of the model
+        """
+
+        name = self.name
+        graduation = self.graduation[1]
+        return f'{name} ({graduation})'
+
