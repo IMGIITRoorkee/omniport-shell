@@ -1,6 +1,7 @@
 from django.db import models
 
 from kernel.models import AbstractPoliticalInformation
+from shell.constants import reservation_categories
 
 
 class PoliticalInformation(AbstractPoliticalInformation):
@@ -11,6 +12,11 @@ class PoliticalInformation(AbstractPoliticalInformation):
     aadhaar_card_number = models.CharField(
         max_length=12,
         blank=True,
+    )
+
+    reservation_category = models.CharField(
+        max_length=3,
+        choices=reservation_categories.RESERVATION_CATEGORIES
     )
 
     class Meta:
@@ -29,4 +35,6 @@ class PoliticalInformation(AbstractPoliticalInformation):
         person = self.person
         nationality = self.nationality
         aadhaar_card_number = self.aadhaar_card_number
-        return f'{person} - {nationality}, {aadhaar_card_number}'
+        if aadhaar_card_number:
+            aadhaar_card_number = f', {aadhaar_card_number}'
+        return f'{person} - {nationality}{aadhaar_card_number}'
