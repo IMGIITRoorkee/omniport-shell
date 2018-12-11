@@ -55,6 +55,18 @@ class Migration(migrations.Migration):
             },
         ),
         migrations.CreateModel(
+            name='Residence',
+            fields=[
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('datetime_created', models.DateTimeField(auto_now_add=True)),
+                ('datetime_modified', models.DateTimeField(auto_now=True)),
+                ('code', models.CharField(choices=[('azb', 'Azad bhawan'), ('ctb', 'Cautley bhawan'), ('gnb', 'Ganga bhawan'), ('gvb', 'Govind bhawan'), ('jlb', 'Jawahar bhawan'), ('mvb', 'Malviya bhawan'), ('rkb', 'Radhakrishnan bhawan'), ('rpb', 'Rajendra bhawan'), ('rgb', 'Rajiv bhawan'), ('rvb', 'Ravindra bhawan'), ('snb', 'Sarojini bhawan'), ('kgb', 'Kasturba bhawan'), ('igb', ' Indira bhawan'), ('gph', 'G.P. hostel'), ('mrc', 'M.R. Chopra hostel'), ('azw', 'Azad wing'), ('dsb', 'D.S. Barrack hostel'), ('ank', 'A.N. Khosla house'), ('khs', 'Khosla international house (stay)'), ('ncn', 'N.C. Nigam house'), ('fah', 'Faculty home'), ('khg', 'Khosla international house (guest)'), ('vig', 'Vigyan kunj'), ('vik', 'Vikas nagar'), ('nit', 'Niti nagar'), ('jkh', 'Jai Krishna house'), ('shi', 'Shivalik apartments'), ('hva', 'Hill view apartments'), ('oth', "Old teachers' hostel"), ('far', 'Faculty residences'), ('doc', 'Doctoral residences'), ('nor', 'Non-resident')], max_length=3, unique=True)),
+            ],
+            options={
+                'abstract': False,
+            },
+        ),
+        migrations.CreateModel(
             name='FacultyMember',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
@@ -98,6 +110,7 @@ class Migration(migrations.Migration):
                 ('passport_number', models.CharField(blank=True, max_length=15)),
                 ('driving_license_number', models.CharField(blank=True, max_length=31)),
                 ('aadhaar_card_number', models.CharField(blank=True, max_length=12)),
+                ('reservation_category', models.CharField(max_length=3, choices=[('gen', 'General'), ('sc', 'Scheduled Caste'), ('st', 'Scheduled Tribe'), ('obc', 'Other Backward Classes'), ('arm', 'Army veteran'), ('qip', 'Qualified institutional participant'), ('ccr', 'Indian Council for Cultural Relations'), ('tec', 'Indian Technical and Economic Cooperation Programme')])),
                 ('person', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.KERNEL_PERSON_MODEL)),
             ],
             options={
