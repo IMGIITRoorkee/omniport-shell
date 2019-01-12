@@ -39,7 +39,7 @@ def has_omnipotence_rights(user):
     return get_rights_for_semester(semester_no=5, user=user)
 
 
-def has_alohomora_rights(user):
+def has_polyjuice_rights(user):
     """
     Check if the given user has enough privileges to impersonate another user
     :param user: the user whose privileges are being tested
@@ -48,7 +48,7 @@ def has_alohomora_rights(user):
     return get_rights_for_semester(semester_no=5, user=user)
 
 
-def has_lockpicking_rights(user):
+def has_alohomora_rights(user):
     """
     Check if the given user has enough privileges to reset anyone's password
     :param user: the user whose privileges are being tested
