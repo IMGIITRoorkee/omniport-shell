@@ -106,7 +106,7 @@ class Migration(migrations.Migration):
                 ('datetime_created', models.DateTimeField(auto_now_add=True)),
                 ('datetime_modified', models.DateTimeField(auto_now=True)),
                 ('nationality', django_countries.fields.CountryField(max_length=2)),
-                ('religion', models.CharField(blank=True, max_length=15)),
+                ('religion', models.CharField(blank=True, max_length=63)),
                 ('passport_number', models.CharField(blank=True, max_length=15)),
                 ('driving_license_number', models.CharField(blank=True, max_length=31)),
                 ('aadhaar_card_number', models.CharField(blank=True, max_length=12)),
