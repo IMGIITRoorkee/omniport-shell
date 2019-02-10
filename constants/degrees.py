@@ -8,6 +8,7 @@ INTEGRATED_DUAL_DEGREE = 'idd'
 BACHELOR_OF_SCIENCE = 'bsc'
 BACHELOR_OF_ARCHITECTURE = 'imsc'
 INTEGRATED_MASTER_OF_SCIENCE = 'barch'
+INTEGRATED_MASTER_OF_TECHNOLOGY = 'imt'
 GRADUATE_DEGREES = (
     (
         BACHELOR_OF_TECHNOLOGY,
@@ -28,6 +29,10 @@ GRADUATE_DEGREES = (
     (
         INTEGRATED_MASTER_OF_SCIENCE,
         'Int. M.Sc. - Integrated Master of Science',
+    ),
+    (
+        INTEGRATED_MASTER_OF_TECHNOLOGY,
+        'Int. M.Tech - Integrated Master of Technology',
     ),
 )
 
