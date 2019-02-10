@@ -1,3 +1,6 @@
+from shell.constants.centres import CENTRES
+
+
 """
 Departments of IIT Roorkee
 """
@@ -115,3 +118,9 @@ DEPARTMENTS = (
         'Quality Improvement Programme'
     ),
 )
+
+DEPARTMENTS = (
+        DEPARTMENTS
+        + CENTRES
+)
+
