@@ -1,5 +1,5 @@
-from omniport.middleware.person_roles import get_role
-from kernel.mixins.period_mixin import ActiveStatus
+from formula_one.enums.active_status import ActiveStatus
+from kernel.managers.get_role import get_role
 
 
 def get_rights_for_semester(user, semester_no):
