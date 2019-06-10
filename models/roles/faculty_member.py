@@ -14,6 +14,15 @@ class FacultyMember(AbstractFacultyMember):
         choices=faculty_designations.FACULTY_DESIGNATIONS,
     )
 
+    @property
+    def designation_name(self):
+        """
+        Return the name of the designation
+        :return: the name of the designation
+        """
+
+        return self.get_designation_display()
+
     def __str__(self):
         """
         Return the string representation of the model
@@ -21,6 +30,6 @@ class FacultyMember(AbstractFacultyMember):
         """
 
         person = self.person
-        designation = self.get_designation_display()
+        designation = self.designation_name
         department = self.department
         return f'{person} - {designation}, {department}'
