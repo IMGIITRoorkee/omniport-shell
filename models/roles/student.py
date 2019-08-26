@@ -16,3 +16,11 @@ class Student(AbstractStudent):
         ],
         unique=True,
     )
+
+    def save(self, *args, **kwargs):
+        """
+        Override save method of Student class to automatically run validators of a model.
+        """
+
+        self.full_clean()
+        return super().save(*args, **kwargs)
