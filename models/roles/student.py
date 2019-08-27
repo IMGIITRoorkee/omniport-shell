@@ -22,5 +22,6 @@ class Student(AbstractStudent):
         Override save method of Student class to automatically run validators of a model.
         """
 
-        self.full_clean()
+        if kwargs.get('run_validations', False):
+            self.full_clean()
         return super().save(*args, **kwargs)
