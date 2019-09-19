@@ -15,7 +15,7 @@ class PoliticalInformation(AbstractPoliticalInformation):
     )
 
     reservation_category = models.CharField(
-        max_length=3,
+        max_length=7,
         choices=reservation_categories.RESERVATION_CATEGORIES
     )
 
