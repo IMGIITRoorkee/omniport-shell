@@ -27,5 +27,6 @@ class FacultyMemberSerializer(BaseFacultyMemberSerializer):
             'id',
             'person',
             'department',
+            'employee_id',
             'designation',
         ]

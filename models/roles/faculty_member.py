@@ -1,3 +1,4 @@
+from django.core.validators import RegexValidator
 from django.db import models
 
 from kernel.models import AbstractFacultyMember
@@ -12,6 +13,13 @@ class FacultyMember(AbstractFacultyMember):
     designation = models.CharField(
         max_length=3,
         choices=faculty_designations.FACULTY_DESIGNATIONS,
+    )
+    employee_id = models.CharField(
+        max_length=6,
+        validators=[
+            RegexValidator(r'\d{6}'),
+        ],
+        unique=True,
     )
 
     def __str__(self):
