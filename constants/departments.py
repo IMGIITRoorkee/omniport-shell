@@ -124,8 +124,7 @@ DEPARTMENTS = (
     ),
 )
 
-DEPARTMENTS = (
+DEPARTMENTS_AND_CENTRES = (
         DEPARTMENTS
         + CENTRES
 )
-
