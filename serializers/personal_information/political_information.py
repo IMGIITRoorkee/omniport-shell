@@ -17,6 +17,7 @@ class PoliticalInformationSerializer(BasePoliticalInformationSerializer):
         'religion',
         'passport_number',
         'driving_license_number',
+        'aadhaar_card_number',
     ]
 
     class Meta:
