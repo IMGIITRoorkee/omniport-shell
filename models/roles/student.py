@@ -16,3 +16,13 @@ class Student(AbstractStudent):
         ],
         unique=True,
     )
+
+    def save(self, *args, **kwargs):
+        """
+        Override .save call to update the year of the student whenever
+        the semester is updated
+        """
+        curent_semester = self.current_semester
+        self.current_year = int((curent_semester+1)/2)
+        super(Student, self).save(*args, **kwargs)
+
