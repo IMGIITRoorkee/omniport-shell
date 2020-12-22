@@ -13,15 +13,17 @@ MAINTAINER_ROLES = (
 )
 
 WEBMASTER = 'web'
-HUB_COORDINATOR = 'hub'
+PROJECT_ASSOCIATE = 'pra'
 PROJECT_LEADER = 'pro'
 COORDINATOR = 'coo'
 TECHNICAL_ADVISER = 'adv'
+EMERITUS_COORDINATOR = 'eco'
 
 MAINTAINER_DESIGNATIONS = (
     (WEBMASTER, 'Webmaster'),
-    (HUB_COORDINATOR, 'Hub coordinator'),
+    (PROJECT_ASSOCIATE, 'Project associate'),
     (PROJECT_LEADER, 'Project leader'),
     (COORDINATOR, 'Coordinator'),
     (TECHNICAL_ADVISER, 'Technical adviser'),
+    (EMERITUS_COORDINATOR, 'Emeritus coordinator'),
 )
