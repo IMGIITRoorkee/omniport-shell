@@ -20,6 +20,7 @@ JOINT_PROFESSOR = 'jp'
 LECTURER = 'lec'
 PROFESSOR = 'pro'
 RAMANUJAN_FELLOW = 'raf'
+RAMALINGASWAMI_FELLOW = 'rmf'
 RETIRED_FACULTY = 'ref'
 SCIENTIFIC_OFFICER = 'so'
 SENIOR_SCIENTIFIC_OFFICER = 'sso'
@@ -47,6 +48,7 @@ FACULTY_DESIGNATIONS = (
     (LECTURER, 'Lecturer'),
     (PROFESSOR, 'Professor'),
     (RAMANUJAN_FELLOW, 'Ramanujan fellow'),
+    (RAMALINGASWAMI_FELLOW, 'Ramalingaswami fellow'),
     (RETIRED_FACULTY, 'Retired faculty'),
     (SCIENTIFIC_OFFICER, 'Scientific officer'),
     (SENIOR_SCIENTIFIC_OFFICER, 'Senior scientific officer'),
