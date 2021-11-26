@@ -70,4 +70,4 @@ def has_helpcentre_rights(user):
     :return: True if the user has privileges, False otherwise
     """
 
-    return get_rights_for_semester(semester_no=4, user=user)
+    return get_rights_for_semester(semester_no=4, user=user, right_if_not_student=True)

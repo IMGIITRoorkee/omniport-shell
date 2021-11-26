@@ -9,6 +9,7 @@ BACHELOR_OF_SCIENCE = 'bsc'
 BACHELOR_OF_ARCHITECTURE = 'barch'
 INTEGRATED_MASTER_OF_SCIENCE = 'imsc'
 INTEGRATED_MASTER_OF_TECHNOLOGY = 'imt'
+BACHELOR_OF_SCIENCE_MASTER_OF_SCIENCE = 'bsms'
 GRADUATE_DEGREES = (
     (
         BACHELOR_OF_TECHNOLOGY,
@@ -33,6 +34,10 @@ GRADUATE_DEGREES = (
     (
         INTEGRATED_MASTER_OF_TECHNOLOGY,
         'Int. M.Tech - Integrated Master of Technology',
+    ),
+    (
+        BACHELOR_OF_SCIENCE_MASTER_OF_SCIENCE,
+        'BS-MS - Bachelor of Science - Master of Science',
     ),
 )
 
@@ -98,4 +103,4 @@ DEGREES = (
         + POSTGRADUATE_DEGREES
         + DOCTORATE_DEGREES
         + POSTDOCTORATE_DEGREES
-)
+        )
