@@ -5,6 +5,8 @@ Centres of IIT Roorkee
 # Academic centres
 ALTERNATE_HYDRO_ENERGY_CENTRE = 'ahec'
 CENTRE_FOR_NANOTECHNOLOGY = 'cnt'
+CENTRE_FOR_ARITFICIAL_INTELLIGENCE_AND_DATA_SCIENCE = 'caids'
+CONTINUING_EDUCATION_CENTRE_AND_QIP_CENTRE = 'cecqc'
 
 ACADEMIC_CENTRES = (
     (
@@ -15,6 +17,14 @@ ACADEMIC_CENTRES = (
         CENTRE_FOR_NANOTECHNOLOGY,
         'Centre for Nanotechnology'
     ),
+    (
+        CENTRE_FOR_ARITFICIAL_INTELLIGENCE_AND_DATA_SCIENCE,
+        'Centre for Aritificial Intelligence and Data Science'
+    ),
+    (
+        CONTINUING_EDUCATION_CENTRE_AND_QIP_CENTRE,
+        'Continuing Education Centre and QIP Centre'
+    )
 )
 
 # Centres of excellence
