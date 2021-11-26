@@ -49,6 +49,8 @@ MASTER_OF_URBAN_AND_REGIONAL_PLANNING = 'murp'
 POSTGRADUATE_DIPLOMA_COURSE = 'pgdip'
 MASTER_OF_BUSINESS_ADMINISTRATION = 'mba'
 MASTER_OF_COMPUTER_APPLICATIONS = 'mca'
+MASTER_OF_DESIGN = 'mdes'
+
 POSTGRADUATE_DEGREES = (
     (
         MASTER_OF_TECHNOLOGY,
@@ -78,6 +80,10 @@ POSTGRADUATE_DEGREES = (
         MASTER_OF_COMPUTER_APPLICATIONS,
         'M.C.A. - Master of Computer Applications',
     ),
+    (
+        MASTER_OF_DESIGN,
+        'Master of Design',
+    )
 )
 
 # Doctorate degrees
