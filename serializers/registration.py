@@ -6,6 +6,14 @@ KERNEL_MAINTAINER_SERIALIZER = (
     'shell.serializers.roles.'
     'maintainer.MaintainerSerializer'
 )
+KERNEL_JOINTFACULTYMEMBERSHIP_SERIALIZER = (
+    'shell.serializers.roles.'
+    'joint_faculty.JointFacultyMembershipSerializer'
+)
+KERNEL_JOINTFACULTY_SERIALIZER = (
+    'shell.serializers.roles.'
+    'joint_faculty.JointFacultySerializer'
+)
 
 KERNEL_POLITICALINFORMATION_SERIALIZER = (
     'shell.serializers.personal_information.'
@@ -15,6 +23,8 @@ KERNEL_POLITICALINFORMATION_SERIALIZER = (
 __all__ = [
     'KERNEL_FACULTYMEMBER_SERIALIZER',
     'KERNEL_MAINTAINER_SERIALIZER',
+    'KERNEL_JOINTFACULTYMEMBERSHIP_SERIALIZER',
+    'KERNEL_JOINTFACULTY_SERIALIZER',
 
     'KERNEL_POLITICALINFORMATION_SERIALIZER',
 ]
