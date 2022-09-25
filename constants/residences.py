@@ -48,6 +48,7 @@ AZAD_WING = 'azw'
 DS_BARRACK = 'dsb'
 AN_KHOSLA_HOUSE = 'ank'
 KHOSLA_INTERNATIONAL_HOUSE = 'khs'
+MARRIED_HOSTEL_SAHARANPUR_CAMPUS = 'mhs'
 MARRIED_HOSTELS = (
     (GP_HOSTEL, 'G.P. hostel'),
     (MR_CHOPRA_HOSTEL, 'M.R. Chopra hostel'),
@@ -55,6 +56,7 @@ MARRIED_HOSTELS = (
     (DS_BARRACK, 'D.S. Barrack hostel'),
     (AN_KHOSLA_HOUSE, 'A.N. Khosla house'),
     (KHOSLA_INTERNATIONAL_HOUSE, 'Khosla international house (stay)'),
+    (MARRIED_HOSTEL_SAHARANPUR_CAMPUS, 'Married hostel Saharanpur campus')
 )
 
 # Guest houses
