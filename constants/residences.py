@@ -33,11 +33,13 @@ SAROJINI_BHAWAN = 'snb'
 KASTURBA_BHAWAN = 'kgb'
 INDIRA_BHAWAN = 'igb'
 VIGYAN_KUNJ_GIRLS = 'vkg'
+HIMGIRI_APARTMENT = 'hia'
 GIRLS_HOSTELS = (
     (SAROJINI_BHAWAN, 'Sarojini bhawan'),
     (KASTURBA_BHAWAN, 'Kasturba bhawan'),
     (INDIRA_BHAWAN, ' Indira bhawan'),
     (VIGYAN_KUNJ_GIRLS, 'Vigyan Kunj (girls)'),
+    (HIMGIRI_APARTMENT, 'Himgiri apartment'),
 )
 
 # Married hostels
