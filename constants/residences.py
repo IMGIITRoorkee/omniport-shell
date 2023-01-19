@@ -14,6 +14,7 @@ RADHAKRISHNAN_BHAWAN = 'rkb'
 RAJENDRA_BHAWAN = 'rjb'
 RAJIV_BHAWAN = 'rgb'
 RAVINDRA_BHAWAN = 'rvb'
+HIMALAYA_BHAWAN_BOYS = 'hlb'
 BOYS_HOSTELS = (
     (AZAD_BHAWAN, 'Azad bhawan'),
     (CAUTLEY_BHAWAN, 'Cautley bhawan'),
@@ -25,6 +26,7 @@ BOYS_HOSTELS = (
     (RAJENDRA_BHAWAN, 'Rajendra bhawan'),
     (RAJIV_BHAWAN, 'Rajiv bhawan'),
     (RAVINDRA_BHAWAN, 'Ravindra bhawan'),
+    (HIMALAYA_BHAWAN_BOYS,'Himalaya bhawan (boys)')
 )
 
 # Girls' hostels
@@ -32,14 +34,16 @@ BOYS_HOSTELS = (
 SAROJINI_BHAWAN = 'snb'
 KASTURBA_BHAWAN = 'kgb'
 INDIRA_BHAWAN = 'igb'
-VIGYAN_KUNJ_GIRLS = 'vkg'
+VIGYAN_BHAWAN_GIRLS = 'vbg'
 HIMGIRI_APARTMENT = 'hia'
+HIMALAYA_BHAWAN_GIRLS = 'hlg'
 GIRLS_HOSTELS = (
     (SAROJINI_BHAWAN, 'Sarojini bhawan'),
     (KASTURBA_BHAWAN, 'Kasturba bhawan'),
     (INDIRA_BHAWAN, ' Indira bhawan'),
-    (VIGYAN_KUNJ_GIRLS, 'Vigyan Kunj (girls)'),
+    (VIGYAN_BHAWAN_GIRLS, 'Vigyan bhawan (girls)'),
     (HIMGIRI_APARTMENT, 'Himgiri apartment'),
+    (HIMALAYA_BHAWAN_GIRLS, 'Himalaya bhawan (girls)')
 )
 
 # Married hostels
@@ -74,7 +78,7 @@ GUEST_HOUSES = (
 
 # Unclassified residences
 # These residences have no official mention anywhere but are known to exist
-VIGYAN_KUNJ = 'vig'
+VIGYAN_BHAWAN = 'vig'
 VIKAS_NAGAR = 'vik'
 NITI_NAGAR = 'nit'
 JAI_KRISHNA_HOUSE = 'jkh'
@@ -84,7 +88,7 @@ HILL_VIEW_APARTMENTS = 'hva'
 FACULTY_RESIDENCES = 'far'
 DOCTORAL_RESIDENCES = 'doc'
 UNCLASSIFIED_RESIDENCES = (
-    (VIGYAN_KUNJ, 'Vigyan kunj'),
+    (VIGYAN_BHAWAN, 'Vigyan kunj'),
     (VIKAS_NAGAR, 'Vikas nagar'),
     (NITI_NAGAR, 'Niti nagar'),
     (JAI_KRISHNA_HOUSE, 'Jai Krishna house'),
