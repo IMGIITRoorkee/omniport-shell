@@ -78,7 +78,7 @@ GUEST_HOUSES = (
 
 # Unclassified residences
 # These residences have no official mention anywhere but are known to exist
-VIGYAN_BHAWAN = 'vig'
+VIGYAN_BHAWAN = 'vib'
 VIKAS_NAGAR = 'vik'
 NITI_NAGAR = 'nit'
 JAI_KRISHNA_HOUSE = 'jkh'
@@ -88,7 +88,7 @@ HILL_VIEW_APARTMENTS = 'hva'
 FACULTY_RESIDENCES = 'far'
 DOCTORAL_RESIDENCES = 'doc'
 UNCLASSIFIED_RESIDENCES = (
-    (VIGYAN_BHAWAN, 'Vigyan kunj'),
+    (VIGYAN_BHAWAN, 'Vigyan bhawan'),
     (VIKAS_NAGAR, 'Vikas nagar'),
     (NITI_NAGAR, 'Niti nagar'),
     (JAI_KRISHNA_HOUSE, 'Jai Krishna house'),
