@@ -14,6 +14,10 @@ class Migration(migrations.Migration):
         ('shell', '0007_auto_20211130_0216'),
     ]
 
+    run_before = [
+        ('kernel', '0007_jointfaculty_jointfacultymembership'),
+    ]
+
     operations = [
         migrations.AlterField(
             model_name='centre',
