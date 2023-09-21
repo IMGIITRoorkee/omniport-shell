@@ -23,6 +23,12 @@ class Student(AbstractStudent):
         the semester is updated
         """
         curent_semester = self.current_semester
-        self.current_year = int((curent_semester+1)/2)
+
+        # To cater MBA trimester
+        if self.branch.code == '810':
+            self.current_year = int((curent_semester+3)/4)
+        else:
+            self.current_year = int((curent_semester+1)/2)
+            
         super(Student, self).save(*args, **kwargs)
 
