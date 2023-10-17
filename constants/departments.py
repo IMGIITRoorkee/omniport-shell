@@ -6,7 +6,7 @@ Departments of IIT Roorkee
 """
 
 APPLIED_SCIENCE_AND_ENGINEERING_DEPARTMENT = 'ased'
-APPLIED_MATHEMATICS_AND_SCIENTIFIC_COMPUTING = 'amsc'
+APPLIED_MATHEMATICS_AND_SCIENTIFIC_COMPUTING_DEPARTMENT = 'amscd'
 ARCHITECTURE_AND_PLANNING_DEPARTMENT = 'arcd'
 BIOTECHNOLOGY_DEPARTMENT = 'btd'
 BIOSCIENCES_AND_BIOENGINEERING_DEPARTMENT = 'bsbed'
@@ -38,8 +38,8 @@ DEPARTMENTS = (
         'Applied Science and Engineering Department'
     ),
     (
-        APPLIED_MATHEMATICS_AND_SCIENTIFIC_COMPUTING,
-        'Applied Mathematics and Scientific Computing'
+        APPLIED_MATHEMATICS_AND_SCIENTIFIC_COMPUTING_DEPARTMENT,
+        'Applied Mathematics and Scientific Computing Department'
     ),
     (
         ARCHITECTURE_AND_PLANNING_DEPARTMENT,
