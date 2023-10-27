@@ -22,7 +22,17 @@ class Student(AbstractStudent):
         Override .save call to update the year of the student whenever
         the semester is updated
         """
-        curent_semester = self.current_semester
-        self.current_year = int((curent_semester+1)/2)
+        semester_count = self.branch.semester_count
+        year_count = self.branch.year_count
+
+        # In case branch semester_count or year_count is None, set semester_per_year to default value i.e. 2
+        try:
+            semester_per_year = int(semester_count/year_count)
+        except TypeError:
+            semester_per_year = int(2)
+
+        current_semester = self.current_semester
+        self.current_year = int((current_semester + semester_per_year - 1)/semester_per_year)
+
         super(Student, self).save(*args, **kwargs)
 
