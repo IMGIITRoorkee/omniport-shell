@@ -10,6 +10,8 @@ BACHELOR_OF_ARCHITECTURE = 'barch'
 INTEGRATED_MASTER_OF_SCIENCE = 'imsc'
 INTEGRATED_MASTER_OF_TECHNOLOGY = 'imt'
 BACHELOR_OF_SCIENCE_MASTER_OF_SCIENCE = 'bsms'
+BACHELOR_OF_DESIGN = 'bdes'
+
 GRADUATE_DEGREES = (
     (
         BACHELOR_OF_TECHNOLOGY,
@@ -39,6 +41,10 @@ GRADUATE_DEGREES = (
         BACHELOR_OF_SCIENCE_MASTER_OF_SCIENCE,
         'BS-MS - Bachelor of Science - Master of Science',
     ),
+    (
+        BACHELOR_OF_DESIGN,
+        'B.Des. - Bachelor of Design',
+    )
 )
 
 # Postgraduate degrees
@@ -83,7 +89,7 @@ POSTGRADUATE_DEGREES = (
     ),
     (
         MASTER_OF_DESIGN,
-        'Master of Design',
+        'M.Des. - Master of Design',
     ),
     (
         MASTER_IN_INNOVATION_MANAGEMENT,
