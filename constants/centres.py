@@ -29,7 +29,7 @@ ACADEMIC_CENTRES = (
     ),
     (
         CENTER_FOR_SPACE_SCIENCE_AND_TECHNOLOGY,
-        'Center for Space Science and Technology'
+        'Centre for Space Science and Technology'
     ),
     (
         MEHTA_FAMILY_SCHOOL_OF_DATA_SCIENCE_AND_ARTIFICIAL_INTELLIGENCE,
