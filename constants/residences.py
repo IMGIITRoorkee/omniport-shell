@@ -14,7 +14,7 @@ RADHAKRISHNAN_BHAWAN = 'rkb'
 RAJENDRA_BHAWAN = 'rjb'
 RAJIV_BHAWAN = 'rgb'
 RAVINDRA_BHAWAN = 'rvb'
-HIMALAYA_BHAWAN_BOYS = 'hlb'
+EWS_BHAWAN_BOYS = 'ewb'
 BOYS_HOSTELS = (
     (AZAD_BHAWAN, 'Azad bhawan'),
     (CAUTLEY_BHAWAN, 'Cautley bhawan'),
@@ -26,7 +26,7 @@ BOYS_HOSTELS = (
     (RAJENDRA_BHAWAN, 'Rajendra bhawan'),
     (RAJIV_BHAWAN, 'Rajiv bhawan'),
     (RAVINDRA_BHAWAN, 'Ravindra bhawan'),
-    (HIMALAYA_BHAWAN_BOYS,'Himalaya bhawan (boys)')
+    (EWS_BHAWAN_BOYS,'EWS bhawan (boys)')
 )
 
 # Girls' hostels
